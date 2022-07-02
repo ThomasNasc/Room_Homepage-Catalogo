@@ -10,6 +10,7 @@ const ContainerSlide = styled.div`
   height: 70%;
   @media screen and (min-width: 1000px) {
     flex-direction: row;
+    align-items: center;
   }
   .ContainerButtons {
     display: flex;
@@ -58,7 +59,7 @@ const ContainerSlide = styled.div`
     padding-bottom: 0;
     @media screen and (min-width: 1000px) {
       width: 40%;
-      height: 100%;
+      /* height: 100%; */
     }
     h1 {
       font-size: 2.5rem;
