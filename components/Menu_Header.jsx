@@ -64,21 +64,22 @@ const Menu = styled.div`
     a {
       display: flex;
       width: 7vw;
-      min-width: 80px;
+      /* min-width: 80px; */
       font-weight: 600;
       height: 80px;
       cursor: pointer;
       align-items: center;
       justify-content: center;
-      font-size: 20px;
+      font-size: 16px;
       background-color: #36353547;
       border-radius: 5px;
+      margin-right: 10px;
       :hover {
         text-decoration: underline;
         text-underline-offset: 10px;
       }
       @media screen and (max-width: 850px) {
-        width: 20vw;
+        width: 15vw;
         background-color: transparent;
       }
     }
