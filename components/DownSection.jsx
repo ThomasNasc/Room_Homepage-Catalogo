@@ -57,7 +57,7 @@ function DownSection(props) {
         </p>
       </div>
       <div className="AboutImage Light">
-        <Image src={"/image-about-light.jpg"} layout="fill" />
+        <Image src={"/image-about-light.jpeg"} layout="fill" />
       </div>
     </Footer>
   );

@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+
 const ContainerSlide = styled.div`
   display: flex;
   flex-direction: column;
   position: relative;
-height: 70%;
+  height: 70%;
   @media screen and (min-width: 1000px) {
     flex-direction: row;
   }
@@ -52,9 +54,9 @@ height: 70%;
   .Information {
     width: 100vw;
     padding: 6vw;
-padding-top: 6vh;
+    padding-top: 6vh;
     padding-bottom: 0;
-    @media screen and (min-width:1000px) {
+    @media screen and (min-width: 1000px) {
       width: 40%;
       height: 100%;
     }
@@ -79,7 +81,7 @@ padding-top: 6vh;
       font-weight: 600;
       margin-bottom: 50px;
       @media screen and (min-width: 1000px) {
-  }
+      }
       :hover {
         color: #cacaca;
       }
@@ -100,10 +102,12 @@ function Slider(props) {
       text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident, alias nesciunt, maiores omnis atque blanditiis pariatur vitae tempore a, distinctio ab deleniti! Beatae aperiam obcaecati eum vero nulla tenetur illum?Provident, alias nesciunt, maiores omnis atque blanditiis pariatur vitae tempore a, distinctio ab deleniti! Beatae aperiam obcaecati eum vero nulla tenetur illum?",
     },
     {
+      
       src: "/desktop-image-hero-2.jpg",
       title: "We are available all across the globe",
       text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident, alias nesciunt, maiores omnis atque blanditiis pariatur vitae tempore a, em ipsum dolor sit, amet consectetur adipisicing elit. Provident, alias nesciunt, maiores omnis atque blanditiis pariatur vitae tempore a,distinctio ab deleniti! Beatae aperiam obcaecati eum vero nulla tenetur illum?",
     },
+
     {
       src: "/desktop-image-hero-3.jpg",
       title: "Manufactured with the best materials",
@@ -116,6 +120,8 @@ function Slider(props) {
     content.length - 1 === activeSlide
       ? setActiveSlide(0)
       : setActiveSlide(activeSlide + 1);
+
+
   }
   function BackSlide() {
     0 === activeSlide
