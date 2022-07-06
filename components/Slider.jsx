@@ -133,7 +133,7 @@ function Slider(props) {
   return (
     <ContainerSlide>
       <div className="ImageSlide">
-        <Image src={content[activeSlide].src} layout="fill" />
+        <Image priority={true} src={content[activeSlide].src} layout="fill" />
       </div>
       <div className="Information">
         <h1>{content[activeSlide].title}</h1>
