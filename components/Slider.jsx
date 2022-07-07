@@ -98,21 +98,22 @@ const ContainerSlide = styled.div`
 `;
 
 function Slider(props) {
+  const [Image01,Image02,Image03] = [SlideImage01,SlideImage02,SlideImage03]
   const content = [
     {
-      src: SlideImage01,
+      src: Image01,
       title: "Discover innovative ways to decorate",
       text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident, alias nesciunt, maiores omnis atque blanditiis pariatur vitae tempore a, distinctio ab deleniti! Beatae aperiam obcaecati eum vero nulla tenetur illum?Provident, alias nesciunt, maiores omnis atque blanditiis pariatur vitae tempore a, distinctio ab deleniti! Beatae aperiam obcaecati eum vero nulla tenetur illum?",
     },
     {
       
-      src: SlideImage02,
+      src: Image02,
       title: "We are available all across the globe",
       text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident, alias nesciunt, maiores omnis atque blanditiis pariatur vitae tempore a, em ipsum dolor sit, amet consectetur adipisicing elit. Provident, alias nesciunt, maiores omnis atque blanditiis pariatur vitae tempore a,distinctio ab deleniti! Beatae aperiam obcaecati eum vero nulla tenetur illum?",
     },
 
     {
-      src: SlideImage03,
+      src: Image03,
       title: "Manufactured with the best materials",
       text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident, alias nesciunt,em ipsum dolor sit, amet consectetur adipisicing elit. Provident, alias nesciunt, maiores omnis atque blanditiis pariatur vitae tempore a, maiores omnis atque blanditiis pariatur vitae tempore a, distinctio ab deleniti! Beatae aperiam obcaecati eum vero nulla tenetur illum?",
     },
