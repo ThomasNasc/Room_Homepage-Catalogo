@@ -38,7 +38,7 @@ const Menu = styled.div`
   }
 
   .menuOptions {
-    display: ${(props) => (props.openedMenu ? "flex" : "none")};
+    display: ${(props) => (props.openedMenu ? "none" : "flex")};
     position: absolute;
     top: 0;
     align-items: center;
@@ -64,7 +64,7 @@ const Menu = styled.div`
     a {
       display: flex;
       width: 7vw;
-      /* min-width: 80px; */
+     
       font-weight: 600;
       height: 80px;
       cursor: pointer;
@@ -74,6 +74,7 @@ const Menu = styled.div`
       background-color: #36353547;
       border-radius: 5px;
       margin-right: 10px;
+   -webkit-tap-highlight-color: transparent;
       :hover {
         text-decoration: underline;
         text-underline-offset: 10px;
@@ -93,7 +94,7 @@ function Menu_Header(props) {
         <Image
           layout="fixed"
           width={"20px"}
-          onClick={() => setOpenedMenu(true)}
+          onClick={() => setOpenedMenu(!openedMenu)}
           height={"20px"}
           src={"/icon-hamburger.svg"}
         />
@@ -113,7 +114,7 @@ function Menu_Header(props) {
             className="Icon Close"
             layout="fixed"
             width={"20px"}
-            onClick={() => setOpenedMenu(false)}
+            onClick={() => setOpenedMenu(!openedMenu)}
             height={"20px"}
             src={"/icon-close.svg"}
           />
