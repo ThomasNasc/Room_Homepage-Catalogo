@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import styled, { keyframes } from "styled-components";
-
+import SlideImage01 from '../public/desktop-image-hero-1.jpg'
+import SlideImage02 from '../public/desktop-image-hero-2.jpg'
+import SlideImage03 from '../public/desktop-image-hero-3.jpg'
 
 const ContainerSlide = styled.div`
   display: flex;
@@ -98,19 +100,19 @@ const ContainerSlide = styled.div`
 function Slider(props) {
   const content = [
     {
-      src: "/desktop-image-hero-1.jpg",
+      src: SlideImage01,
       title: "Discover innovative ways to decorate",
       text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident, alias nesciunt, maiores omnis atque blanditiis pariatur vitae tempore a, distinctio ab deleniti! Beatae aperiam obcaecati eum vero nulla tenetur illum?Provident, alias nesciunt, maiores omnis atque blanditiis pariatur vitae tempore a, distinctio ab deleniti! Beatae aperiam obcaecati eum vero nulla tenetur illum?",
     },
     {
       
-      src: "/desktop-image-hero-2.jpg",
+      src: SlideImage02,
       title: "We are available all across the globe",
       text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident, alias nesciunt, maiores omnis atque blanditiis pariatur vitae tempore a, em ipsum dolor sit, amet consectetur adipisicing elit. Provident, alias nesciunt, maiores omnis atque blanditiis pariatur vitae tempore a,distinctio ab deleniti! Beatae aperiam obcaecati eum vero nulla tenetur illum?",
     },
 
     {
-      src: "/desktop-image-hero-3.jpg",
+      src: SlideImage03,
       title: "Manufactured with the best materials",
       text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident, alias nesciunt,em ipsum dolor sit, amet consectetur adipisicing elit. Provident, alias nesciunt, maiores omnis atque blanditiis pariatur vitae tempore a, maiores omnis atque blanditiis pariatur vitae tempore a, distinctio ab deleniti! Beatae aperiam obcaecati eum vero nulla tenetur illum?",
     },
@@ -133,7 +135,7 @@ function Slider(props) {
   return (
     <ContainerSlide>
       <div className="ImageSlide">
-        <Image priority={true} src={content[activeSlide].src} layout="fill" />
+        <Image  src={content[activeSlide].src} layout="fill" />
       </div>
       <div className="Information">
         <h1>{content[activeSlide].title}</h1>
